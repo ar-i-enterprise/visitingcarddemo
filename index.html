@@ -39,11 +39,14 @@
     <!-- Here we load the asset of the robot, pointing to its file. A-frame works with GLTF and GLB models. -->
     <!-- We define a name for this asset, that is "robot" -->
     <a-assets>
+      <!---->
+      BrainStem model created by Keith Hunter and owned by Smith Micro Software,
+      Inc. Exported from Poser and made available under clause (g) of
+      “Legitimate Uses” as defined by the Poser Pro EULA. -->
       <a-asset-item id="robot" src="models/BrainStem.glb"></a-asset-item>
       <!--a-asset-item id="mic" src=" models/mic.gltf"></a-asset-item-->
       <!--a-asset-item id="rover" src="models/rover.glb"></a-asset-item-->
-      <!--a-asset-item-- id="shoe" src="models/shoe.glb"></!--a-asset-item-->
-      <a-asset-item id="ph" src="models/ph.glb"></a-asset-item>
+      <a-asset-item id="def" src="models/shoe.glb"></a-asset-item>
     </a-assets>
 
     <a-marker
@@ -56,7 +59,7 @@
       <!-- Notice the mention to the name robot that we specified above. -->
       <!-- The animation-mixer is the A-frame component to control the animation of the 3D model. Since we are not specifiying any animation -->
       <!-- name, it just loops all the animations of the model  -->
-      <a-entity gltf-model="#ph" animation-mixer></a-entity>
+      <a-entity gltf-model="#def" animation-mixer></a-entity>
       <!--a-entity scale="3 3 3" rotation ="0 -30 0" gltf-model="#car" animation-mixer></a-entity-->
       <!--a-entity scale="0.5 0.5 0.5" rotation ="0 30 0" gltf-model="#rover" animation-mixer></a-entity-->
     </a-marker>
