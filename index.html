@@ -39,18 +39,18 @@
     <!-- Here we load the asset of the robot, pointing to its file. A-frame works with GLTF and GLB models. -->
     <!-- We define a name for this asset, that is "robot" -->
     <a-assets>
-      <!---->
-      BrainStem model created by Keith Hunter and owned by Smith Micro Software,
-      Inc. Exported from Poser and made available under clause (g) of
-      “Legitimate Uses” as defined by the Poser Pro EULA. -->
       <a-asset-item id="robot" src="models/BrainStem.glb"></a-asset-item>
       <!--a-asset-item id="mic" src=" models/mic.gltf"></a-asset-item-->
       <!--a-asset-item id="rover" src="models/rover.glb"></a-asset-item-->
-      <a-asset-item id="shoe" src="models/shoe.glb"></a-asset-item>
+      <!--a-asset-item-- id="shoe" src="models/shoe.glb"></!--a-asset-item-->
       <a-asset-item id="ph" src="models/ph.glb"></a-asset-item>
     </a-assets>
 
-    <a-marker preset="custom" type="pattern" src="patt/1.patt">
+    <a-marker
+      preset="custom"
+      type="pattern"
+      url="https://ar-i-enterprise.github.io/ar-i-marker-patt/black-blue2-0.5.patt"
+    >
       <!--a-marker preset="hiro"-->
       <!-- Here we define the content to show on the marker when it gets detected: the GLTF model of the robot that we specified above. -->
       <!-- Notice the mention to the name robot that we specified above. -->
